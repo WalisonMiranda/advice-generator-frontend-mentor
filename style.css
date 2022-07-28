@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Manrope', sans-serif;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #202632;
+}
+
+main .wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 520px;
+    margin: 0 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #313A49;
+    border-radius: 8px;
+}
+
+main .wrapper .title {
+    color: #53FFAB;
+    margin-top: 16px; 
+}
+
+main .wrapper .advice {
+    margin-top: 24px;
+    font-size: 28px;
+    color: #CEE3E8;
+    text-align: center;
+}
+
+main .wrapper .line {
+    width: 100%;
+    height: 16px;
+    margin: 40px 0;
+    background: url("images/pattern-divider-desktop.svg");
+    background-position: center;
+}
+
+main .wrapper .btn-new-advice {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    bottom: -30px;
+    background-color: #53FFAB;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: box-shadow .1s ease;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .wrapper .btn-new-advice:hover {
+    box-shadow: 0 0 24px 0px #53FFAB;
+    -moz-box-shadow: 0 0 24px 0px #53FFAB;
+    -webkit-box-shadow: 0 0 24px 0px #53FFAB;
+}
+
+main .wrapper .btn-new-advice img {
+    height: 24px;
+    width: 24px;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 1rem;
+}
+
+footer { 
+    font-size: 11px; 
+    text-align: center;
+    color: #fff;
+}
+
+footer a { 
+    color: #53FFAB; 
+}
+
+@media screen and (max-width: 375px) {
+    main .wrapper {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+    main .wrapper .advice {
+        font-size: 22px;
+    }
+
+    main .wrapper .line {
+        background: url("images/pattern-divider-mobile.svg");
+    }
+}
